@@ -18,17 +18,16 @@ body{
 main{
     height: 97vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 section#telefone{
-    position: absolute;
-    top: 50%;
-    left: 51%;
-    transform: translate(-50%, -50%);
     height: 627px;
     width: 311px;
-    background: url('../imagens/frame-iphone.png') no-repeat center center;
+    background: url('../imagens/frame-iphone.png') no-repeat;
     
 }
 
@@ -39,4 +38,35 @@ iframe#tela{
     height: 470px;
     width: 266px;
     
+}
+
+section#redes-sociais{
+    position: absolute;
+    top: -250px;
+    right: 30px;
+    transform: translate(50%, 50%);
+   display: inline-block;
+   
+   
+   
+}
+
+section#redes-sociais img{
+    
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.201);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+    border: 3px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.481);
+    transition: transform 0.2s;
+}
+
+section#redes-sociais img:active {
+    transform: scale(80%);
 }
